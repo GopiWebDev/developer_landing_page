@@ -2,68 +2,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 
-.main {
-  width: 100%;
-  min-height: 100vh;
+.hero_section {
   background: url(images/developer.png);
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.txt_cont {
+.txt_container {
   color: white;
-  margin: 0 auto;
   max-width: 900px;
-  padding-top: 4.2em;
+  margin: 0 auto;
+  padding-top: 4em;
   line-height: 5.2em;
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 4.5em;
-}
-
-h2 .lg_txt {
+.lg_txt {
   font-size: 4.5em;
   font-weight: 400;
 }
 
-h2 .sm_txt {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-
-.work {
-  width: 100%;
-  height: 11em;
+.black_box {
   background-color: black;
+  padding: 20px;
+}
+
+.black_box h2 {
+  font-size: 4.5em;
   color: white;
   text-align: center;
-}
-
-.work p {
-  font-size: 4.5em;
   font-weight: 300;
-  padding-top: 0.4em;
 }
 
-.work span {
+.black_box span {
   font-size: 6rem;
   font-weight: 400;
   color: white;
 }
 
-.stacks {
+.work {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   max-width: 1100px;
   margin: 50px auto;
+}
+
+.grid_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -77,75 +76,85 @@ h2 .sm_txt {
   transform: scale(1.04);
   box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
   transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.card_pic {
-  width: 100%;
-  height: 50%;
 }
 
 .card_content {
-  padding: 1em;
+  padding: 20px;
 }
 
-.card_title {
-  padding: 5px;
-  font-weight: 500;
-  font-size: 1.25em;
+.card_content h3 {
+  margin-bottom: 10px;
 }
 
-.card_desc {
-  padding: 5px;
-}
-
-.contact {
-  width: 100%;
-  height: 19em;
+.bottom_section {
   display: flex;
 }
 
-.cont {
-  width: 50%;
+.contact {
   background-color: #515603;
-  color: white;
-  padding: 2rem;
-}
-
-.cont h2 {
-  font-size: 4.5rem;
-  font-weight: 300;
-}
-
-.cont p {
-  margin: 1rem 0;
 }
 
 .about {
-  width: 50%;
   background-color: #722300;
-  color: white;
-  padding: 2rem;
 }
 
-.about h2 {
-  font-size: 4.5rem;
+.contact,
+.about {
+  min-height: 300px;
+  padding: 32px;
+  color: white;
+}
+
+.about h2,
+.contact h2 {
+  font-size: 4em;
   font-weight: 300;
 }
 
-.about p {
-  margin: 1rem 0;
+.about p,
+.contact p {
+  margin-bottom: 20px;
 }
 
-.footer {
-  width: 100%;
+footer {
   height: 4em;
   background-color: black;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
-.footer p {
-  font-size: 20px;
-  padding-top: 20px;
+@media (max-width: 786px) {
+  .hero_section {
+    min-height: 50vh;
+  }
+
+  .txt_container {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .lg_txt {
+    font-size: 2em;
+  }
+
+  .black_box h2 {
+    font-size: 1.5em;
+  }
+
+  .black_box h2 span {
+    font-size: 2em;
+  }
+
+  .bottom_section {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .about h2,
+  .contact h2 {
+    font-size: 2em;
+  }
 }
