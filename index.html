@@ -14,53 +14,66 @@
     rel="stylesheet"
   />
   <body>
+    <!-- This is main container at the start -->
     <div class="container">
-      <div class="main">
-        <div class="txt_cont">
-          <h2 class="text">
-            <span class="lg_txt">Hi,</span>
-            <span class="sm_txt">I am John Doe</span>
-          </h2>
-          <h1>FULL STACK DEVELOPER</h1>
+      <section class="hero_section">
+        <div class="txt_container">
+          <h2><span class="lg_txt">Hi,</span>I am John Doe</h2>
+          <h1 class="lg_txt">FULL STACK DEVELOPER</h1>
         </div>
+      </section>
+      <!-- This is black box below that -->
+      <div class="black_box">
+        <h2>WORK, I CAN DO FOR <span>YOU</span></h2>
       </div>
-      <div class="work">
-        <p>WORK, I CAN DO FOR <span>YOU</span></p>
-      </div>
-      <div class="stacks">
-        <div class="card">
-          <img class="card_pic" src="images/web.png" alt="" />
-          <div class="card_content">
-            <p class="card_title">Web Development</p>
-            <p class="card_desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              quibusdam ex quaerat quasi nostrum tempore.
-            </p>
+      <!-- This section is 3 card section -->
+      <section class="work">
+        <div class="grid_item">
+          <div class="card">
+            <div class="img_container">
+              <img src="images/web.png" alt="web developement" />
+            </div>
+            <div class="card_content">
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione quibusdam ex quaerat quasi nostrum tempore.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="_card_pic" src="images/mobile.png" alt="" />
-          <div class="card_content">
-            <p class="card_title">App Development</p>
-            <p class="card_desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              quibusdam ex quaerat quasi nostrum tempore.
-            </p>
+        <div class="grid_item">
+          <div class="card">
+            <div class="img_container">
+              <img src="images/mobile.png" alt="app developement" />
+            </div>
+            <div class="card_content">
+              <h3>App Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione quibusdam ex quaerat quasi nostrum tempore.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="card_pic" src="images/uiux.png" alt="" />
-          <div class="card_content">
-            <p class="card_title">UI UX Design</p>
-            <p class="card_desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              quibusdam ex quaerat quasi nostrum tempore.
-            </p>
+        <div class="grid_item">
+          <div class="card">
+            <div class="img_container">
+              <img src="images/uiux.png" alt="uiux design" />
+            </div>
+            <div class="card_content">
+              <h3>UI UX Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione quibusdam ex quaerat quasi nostrum tempore.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact">
-        <div class="cont">
+      </section>
+      <!-- This is contact and about section -->
+      <div class="bottom_section">
+        <div class="contact">
           <h2>Contact Me</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
@@ -80,9 +93,10 @@
           </p>
         </div>
       </div>
-      <div class="footer">
+      <!-- This is footer section -->
+      <footer>
         <p>PROJECT BY GOPI</p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
